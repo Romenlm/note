@@ -12,3 +12,5 @@
 * [变量赋值](./base/assignment.md)
 
 * [字符串](./base/字符串.md)
+
+* [正则表达式](./regexp/home.md)
