@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>继承</title>
+</head>
+<body>
+
+<script>
+  /**
+   * 创建一个父类
+   * */
+  function Person(name) {
+    this.name = name;
+    this.sum = function () {
+      return 1+2;
+    }
+  }
+  Person.prototype.age = 10;
+
+  // 打印父类中的数据
+  console.log(new Person().sum()) // 10
+
+  /**
+   * 原型继承
+   * 创建一个子函数
+   */
+  function Child() {
+    this.gender = '男'
+  }
+
+  Child.prototype = new Person('张三'); // 使用原型继承父类
+  let child = new Child()
+  console.log(child.name) // 张三
+  console.log(child.sum()) // 3
+
+  /**
+   *借用构造函数继承
+   */
+  function Child2() {
+    Person.call(this,'luomen') // 使用call()对父类进行操作
+    this.clazz = '软件'
+  }
+  let child2 = new Child2();
+  console.log('------------借用构造函数继承------------')
+  console.log(child2.name) // luomen
+  console.log(child2.sum()+'--->'+ child2.clazz) // 3--->软件
+
+  /**
+   * 组合继承
+   */
+  function Child3() {
+    Person.call(this,'Romen');
+    this.height = 175
+  }
+  Child3.prototype = new Person();
+  let child3 = new Child3();
+  console.log('-----------组合继承-------------')
+  console.log(child3.name); // Romen
+  console.log(child3.sum()); // 3
+  console.log(child3.height); // 175
+
+  /**
+   * 原型式继承
+   * 封装函数容器
+   */
+  function content(obj) {
+    function Fun() {}
+    Fun.prototype = obj
+    return new Fun()
+  }
+
+  let child4 = content(new Person('menmen'))
+  console.log('---------原型式继承--------')
+  console.log(child4.name) // menmen
+  console.log(child4.sum()) // 3
+
+  /**
+   * 寄生式继承
+   * 再在原型式上面再嵌套一层
+   */
+  function subo(obj) {
+    let temp = obj;
+    temp.ege = 'hello'
+    return temp;
+  }
+  let child5 = subo(new Person('luomenmen'));
+  console.log('----------寄生式继承--------')
+  console.log(child5.name) // luomenmne
+</script>
+</body>
+</html>
