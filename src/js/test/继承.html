@@ -87,6 +87,37 @@
   let child5 = subo(new Person('luomenmen'));
   console.log('----------寄生式继承--------')
   console.log(child5.name) // luomenmne
+
+  /**
+   * class继承
+   */
+  class Car{
+    constructor(type){
+      this.type = type
+    }
+    fun(){
+      console.log(this.type)
+    }
+  }
+
+  class BreadCar extends Car{
+    constructor(type,color) {
+      super(type); // 调用父的构造函数
+      this.color = color;
+    }
+    f(){
+      this.fun();
+      console.log('颜色为'+this.color);
+    }
+  }
+  class TruckCar extends Car{
+  }
+
+  let breadCar = new BreadCar('轿车','红色')
+  breadCar.f()
+
+  let truckCar = new TruckCar('卡车');
+  truckCar.fun()
 </script>
 </body>
 </html>

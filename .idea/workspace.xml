@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aee6866a-8cee-4ff9-bcf3-f7d4781f8b71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/js/base/class类.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/HOME.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/HOME.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/base/原型继承和class继承.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/base/原型继承和class继承.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/test/继承.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/test/继承.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +23,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TuGXehA9c2hHVj5JXQJc7OtgjN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -33,15 +39,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -68,7 +74,8 @@
       <workItem from="1573652619613" duration="4922000" />
       <workItem from="1573693343799" duration="10000" />
       <workItem from="1574172434207" duration="522000" />
-      <workItem from="1574302610971" duration="210000" />
+      <workItem from="1574302610971" duration="1266000" />
+      <workItem from="1575359512500" duration="2103000" />
     </task>
     <task id="LOCAL-00001" summary="迁移">
       <created>1565945106620</created>
@@ -102,7 +109,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

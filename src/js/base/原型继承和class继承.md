@@ -175,9 +175,39 @@ var child6 = new Sub();
 console.log(child6.name) // luoluo
 ```
 
-
-
 ### class继承
 
+```
+/**
+   * class继承
+   */
+  class Car{
+    constructor(type){
+      this.type = type
+    }
+    fun(){
+      console.log(this.type)
+    }
+  }
+
+  class BreadCar extends Car{
+    constructor(type,color) {
+      super(type); // 调用父的构造函数
+      this.color = color;
+    }
+    f(){
+      this.fun();
+      console.log('颜色为'+this.color);
+    }
+  }
+  class TruckCar extends Car{
+  }
+
+  let breadCar = new BreadCar('轿车','红色')
+  breadCar.f()
+
+  let truckCar = new TruckCar('卡车');
+  truckCar.fun()
+```
 
 
