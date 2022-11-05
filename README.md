@@ -10,5 +10,5 @@
 
 #### [五、electron](./src/electron/home.md)
 
-【注：如有侵犯，请联系本人删除luomenlm@outlook.com】
+【注：仅供个人学习使用，如有侵犯，请联系本人删除 luomenlm@outlook.com 】
 
